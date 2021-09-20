@@ -1,0 +1,121 @@
+.material-label {
+
+
+    position : absolute;
+    top : 50%;
+    color : 222831;
+    transform: translateY(-50%); 
+    transition : 0.1s ease all;
+    font-size: 1em;
+}
+
+.material-input {
+
+    position : relative;
+    background-color: #EEEEEE;
+
+    height: 3.5rem;
+    margin-top: 0;
+    padding-left: 0.25rem;
+    border-bottom: 0.15rem solid #00ADB5;
+    
+} 
+
+.material-box {
+
+    outline : none;
+    border : none;
+    background : none;
+
+    position: relative;
+    /* margin-top: 1em; */
+    width:  99%;
+    height:  100%;
+
+    font-size : 1em;
+}
+
+.input-container {
+    position : absolute;
+    display :  flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    top : 50%;
+    left : 50%;
+    width : 50vh;
+    height: 50vh;
+    text-align: center;
+
+
+    transform : translateX(-50%) translateY(-50%);
+    background-color: #393E46;
+    border-radius: 2.5%;
+    /* padding : 50px; */
+    overflow : hidden;
+    transition : 0.2s ease all;
+
+}
+
+
+
+
+.material-animated-div {
+
+    left : 50%;
+    transform : translateX(-50%) ;
+    position : absolute;
+    height: 100%;
+    width : 0%;
+    background-color : #393E46; 
+    transition : 0.4s ease-out all;
+    overflow: hidden;
+
+
+}
+
+
+
+.material-animated-div-child {
+
+    display : flex;
+    flex-wrap : no-wrap;
+    flex-direction: row;
+    position: absolute;
+    height : 100%;
+    width : 100vw;
+    top : 50%;
+    left : 50%;
+    transform:  translateX(-50% ) translateY(-50%) ;
+
+}
+
+
+
+
+@media only screen and (max-device-width: 768px){
+
+    .input-container {
+
+        width : 100%;
+
+    
+    }
+
+    .material-animated-div {
+
+        transition : 0.35s ease-out all;
+    
+    
+    }
+    .material-animated-div-child {
+
+
+        flex-direction: column;
+
+    
+    }
+    
+
+}

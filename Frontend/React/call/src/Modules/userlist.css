@@ -1,0 +1,193 @@
+.user-list-container {
+
+    flex: 0;
+    margin : 0;
+    /* position: sticky*/
+    display: flex; 
+    flex-direction: column;
+    justify-content: flex-start;
+    flex-basis : 20%;
+    height: 100vh;
+    color : #EEEEEE;
+    background-color: #2e333c;
+    z-index: -1;
+    overflow: none;
+    transition : 0.2s ease all;
+
+
+}
+
+.user-list-container-header {
+
+    padding-top : 0.5rem;
+    padding-bottom : 0.5rem;
+    padding-right : 1rem;
+    flex : 1;
+    max-height : 5vh;
+    background-color: #222831;
+    position : relative;
+
+}
+.user-list-container-header-button {
+
+    filter : invert(90%);
+    float : right;
+    
+
+}
+
+.user-list-container-list {
+
+    flex : 1;
+
+    padding-left : 2.5rem;
+
+}
+.user-icon {
+    position : relative;
+    flex : 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+
+    max-width : 1.8rem;
+    max-height : 1.8rem;
+    
+    min-width : 1.8rem;
+    min-height : 1.8rem;
+
+    border-radius: 50%;
+    border : 3px solid;
+    border-color: #EEEEEE;
+    text-align : center;
+    align-items: center;
+
+    margin-right : 0.5rem;
+
+}
+.user-icon-image {
+    flex : 1;
+    /* top : 50%; */
+    /* transform: translateY(-90%); */
+    width :  1rem;
+    height : 1rem;
+    filter : invert(95%);
+
+}
+
+.user-list-item-back {
+
+    position : absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #222831;
+    z-index: -2;
+    margin-left : 1rem;
+
+}
+.user-list-item {
+
+    position: relative;
+    display: inline-flex;
+    overflow: hidden;
+    flex : 1;
+    margin-bottom: 1rem;
+    flex-direction: row;
+    padding-right: 1.25rem;
+    border-radius: 2rem;
+
+
+}
+.user-list-name {
+
+    display: flex;
+    min-height: 100%;
+    flex : 1;
+
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+
+
+.hide-container {
+
+    /* width: 3rem; */
+    flex-basis : 3rem;
+
+}
+
+
+.hide-container > * {
+
+    display : none;
+
+
+}
+.user-list-container-open-button {
+
+    display : none;
+    height: 3rem;
+    width: auto;
+
+}
+
+.hide-container > .user-list-container-open-button {
+
+    display: block;
+    filter : invert(95%);
+
+}
+@media only screen and (max-device-width: 768px){
+
+
+    .user-icon {
+
+
+        max-width : 2.5rem;
+        max-height : 2.5rem;
+        
+        min-width : 2.5rem;
+        min-height : 2.5rem;
+
+    } 
+
+    .user-icon-image {
+
+        width :  1.5rem;
+        height : 1.5rem;
+
+    }
+
+    .user-list-container {
+
+        position: absolute;
+        width : 100vw;
+        z-index : 1;
+
+
+    }
+    .user-list-name {
+        font-size  : 1.25rem;
+
+    }
+
+    .hide-container {
+
+        width: 12.5vw;
+        height : 12.5vw;
+    
+    }
+
+    .user-list-container-open-button {
+
+        height: 12.5vw;
+        width: auto;
+    
+    }
+
+   
+
+}
