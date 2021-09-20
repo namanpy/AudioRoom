@@ -30,4 +30,5 @@
 *.exe
 *.out
 *.app
-cert/
+Backend/cert/
+Frontend/React/call/node_modules
