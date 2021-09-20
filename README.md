@@ -22,7 +22,13 @@ sudo apt-get install libboost-all-dev
 #Lib Curl
 sudo apt-get install libcurl4-openssl-dev
 
-# Remove WEBRTC_DEBUG define from CMakeLists.txt to compile for Public IP connections.
+
+#Building
+#!# Remove WEBRTC_DEBUG define from CMakeLists.txt to compile for Public IP connections.
+
+cmake -G "Unix Makefiles" 
+cmake -build .
+
 
 ```
 ### 2. Frontend
