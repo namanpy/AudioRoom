@@ -11,6 +11,12 @@ Frontend is developed in React.
 ### 1. Backend
 To compile backend using cmake
 ```
+
+# Build ThirdParty/Opus and ThirdParty/LibSrtp using Makefiles and make install
+Change LIBSRTP_INCLUDE_DIRECTORY , OPUS_INCLUDE_DIRECTORY, JSON_INCLUDE_DIRECTORY 
+To their include directory locations on your computer.
+
+
 #Install dependencies on Ubuntu
 
 #OpenSSL
